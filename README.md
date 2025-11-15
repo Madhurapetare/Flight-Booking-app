@@ -1,1 +1,1 @@
-This is mt full stack app project for flight Booking
+This is full stack app project for flight Booking
