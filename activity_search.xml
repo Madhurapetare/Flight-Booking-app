@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="16dp">
+
+    <EditText android:id="@+id/etSrc" android:hint="Source (e.g. Mumbai)" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+    <EditText android:id="@+id/etDest" android:hint="Destination" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/etSrc" android:layout_marginTop="8dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"/>
+    <EditText android:id="@+id/etDate" android:hint="Date (YYYY-MM-DD)" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/etDest" android:layout_marginTop="8dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"/>
+    <Button android:id="@+id/btnSearch" android:text="Search" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/etDate" android:layout_marginTop="8dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvResults" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintTop_toBottomOf="@id/btnSearch" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" android:layout_marginTop="8dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
